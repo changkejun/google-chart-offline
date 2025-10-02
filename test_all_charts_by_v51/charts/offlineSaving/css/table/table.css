@@ -1,0 +1,373 @@
+.goog-inline-block {
+  position: relative;
+  display: -moz-inline-box;
+  display: inline-block;
+}
+* html .goog-inline-block, *:first-child+html .goog-inline-block {
+  display: inline;
+}
+.goog-custom-button {
+  margin: 2px;
+  border: 0;
+  padding: 0;
+  font-family: Arial , sans-serif;
+  color: #000;
+  background: #ddd url(//ssl.gstatic.com/editor/button-bg.png) repeat-x top left;
+  text-decoration: none;
+  list-style: none;
+  vertical-align: middle;
+  cursor: default;
+  outline: none;
+}
+.goog-custom-button-outer-box, .goog-custom-button-inner-box {
+  border-style: solid;
+  border-color: #aaa;
+  vertical-align: top;
+}
+.goog-custom-button-outer-box {
+  margin: 0;
+  border-width: 1px 0;
+  padding: 0;
+}
+.goog-custom-button-inner-box {
+  margin: 0 -1px;
+  border-width: 0 1px;
+  padding: 3px 4px;
+  white-space: nowrap;
+}
+* html .goog-custom-button-inner-box {
+  left: -1px;
+}
+* html .goog-custom-button-rtl .goog-custom-button-outer-box {
+  left: -1px;
+}
+* html .goog-custom-button-rtl .goog-custom-button-inner-box {
+  right: auto;
+}
+*:first-child+html .goog-custom-button-inner-box {
+  left: -1px;
+}
+*:first-child+html .goog-custom-button-rtl .goog-custom-button-inner-box {
+  left: 1px;
+}
+::root .goog-custom-button {
+  line-height: 0;
+}
+::root .goog-custom-button-outer-box {
+  line-height: 0;
+}
+::root .goog-custom-button-inner-box {
+  line-height: normal;
+}
+.goog-custom-button-disabled {
+  background-image: none !important;
+  opacity: .3;
+  -moz-opacity: .3;
+  filter: alpha(opacity=30);
+}
+.goog-custom-button-disabled .goog-custom-button-outer-box, .goog-custom-button-disabled .goog-custom-button-inner-box {
+  color: #333 !important;
+  border-color: #999 !important;
+}
+* html .goog-custom-button-disabled, *:first-child+html .goog-custom-button-disabled {
+  margin: 2px 1px !important;
+  padding: 0 1px !important;
+}
+.goog-custom-button-hover .goog-custom-button-outer-box, .goog-custom-button-hover .goog-custom-button-inner-box {
+  border-color: #9cf #69e #69e #7af !important;
+}
+.goog-custom-button-active, .goog-custom-button-checked {
+  background-color: #bbb;
+  background-position: bottom left;
+}
+.goog-custom-button-focused .goog-custom-button-outer-box, .goog-custom-button-focused .goog-custom-button-inner-box {
+  border-color: orange;
+}
+.goog-custom-button-collapse-right, .goog-custom-button-collapse-right .goog-custom-button-outer-box, .goog-custom-button-collapse-right .goog-custom-button-inner-box {
+  margin-right: 0;
+}
+.goog-custom-button-collapse-left, .goog-custom-button-collapse-left .goog-custom-button-outer-box {
+  margin-left: 0;
+}
+.goog-custom-button-collapse-left .goog-custom-button-inner-box {
+  margin-left: 0;
+  border-left: 1px solid #fff;
+}
+.goog-custom-button-collapse-left.goog-custom-button-checked .goog-custom-button-inner-box {
+  border-left: 1px solid #ddd;
+}
+* html .goog-custom-button-collapse-left .goog-custom-button-inner-box, *:first-child+html .goog-custom-button-collapse-left .goog-custom-button-inner-box {
+  left: 0;
+}
+.goog-flat-button {
+  position: relative;
+  margin: 2px;
+  border: 1px solid #000;
+  padding: 2px 6px;
+  font: normal 13px "Trebuchet MS" , Tahoma , Arial , sans-serif;
+  color: #fff;
+  background-color: #8c2425;
+  cursor: pointer;
+  outline: none;
+}
+.goog-flat-button-disabled {
+  border-color: #888;
+  color: #888;
+  background-color: #ccc;
+  cursor: default;
+}
+.goog-flat-button-hover {
+  border-color: #8c2425;
+  color: #8c2425;
+  background-color: #eaa4a5;
+}
+.goog-flat-button-active, .goog-flat-button-selected, .goog-flat-button-checked {
+  border-color: #5b4169;
+  color: #5b4169;
+  background-color: #d1a8ea;
+}
+.goog-flat-button-focused {
+  border-color: #5b4169;
+}
+.goog-flat-button-collapse-right {
+  margin-right: 0;
+}
+.goog-flat-button-collapse-left {
+  margin-left: 0;
+  border-left: none;
+}
+.goog-button {
+  color: #036;
+  border-color: #036;
+  background-color: #69c;
+}
+.goog-button-disabled {
+  border-color: #333;
+  color: #333;
+  background-color: #999;
+}
+.goog-button-hover {
+  color: #369;
+  border-color: #369;
+  background-color: #9cf;
+}
+.goog-button-active {
+  color: #69c;
+  border-color: #69c;
+}
+.google-visualization-table {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.google-visualization-table * {
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+.google-visualization-table>div:first-child {
+  border: solid #eee;
+  border-width: 0;
+}
+.google-visualization-table>div:first-child.scrolling .google-visualization-table-table th, .google-visualization-table>div:first-child.scrolling .google-visualization-table-table .frozen-column {
+  visibility: hidden;
+  opacity: 0;
+  color: transparent;
+}
+.google-visualization-table>div:first-child.doneScrolling .google-visualization-table-table th {
+  -webkit-transition: opacity .25s ease-in .1s;
+  -o-transition: opacity .25s ease-in .1s;
+  transition: opacity .25s ease-in .1s;
+}
+.google-visualization-table>div:first-child.doneScrolling .google-visualization-table-table .frozen-column {
+  -webkit-transition: visibility , opacity .15s ease-in .15s;
+  -o-transition: visibility , opacity .15s ease-in .15s;
+  transition: visibility , opacity .15s ease-in .15s;
+}
+.google-visualization-table-table {
+  font-family: arial , helvetica;
+  font-size: 10pt;
+  cursor: default;
+  margin: 0;
+  background: white;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+.google-visualization-table-table * {
+  margin: 0;
+}
+.google-visualization-table .gradient {
+  background-image: url("//ssl.gstatic.com/charts/static/table-title-bg.gif") repeat-x left bottom;
+  background-image: -moz-linear-gradient(top,rgba(255,255,255,0.8)  0%,rgba(255,255,255,0.7)  30%,rgba(255,255,255,0.5)  60%,rgba(255,255,255,0)  100%);
+  background-image: -webkit-linear-gradient(top,rgba(255,255,255,0.8)  0%,rgba(255,255,255,0.7)  30%,rgba(255,255,255,0.5)  60%,rgba(255,255,255,0)  100%);
+  background-image: -o-linear-gradient(top,rgba(255,255,255,0.8)  0%,rgba(255,255,255,0.7)  30%,rgba(255,255,255,0.5)  60%,rgba(255,255,255,0)  100%);
+  background-image: -ms-linear-gradient(top,rgba(255,255,255,0.8)  0%,rgba(255,255,255,0.7)  30%,rgba(255,255,255,0.5)  60%,rgba(255,255,255,0)  100%);
+  background-image: linear-gradient(to bottom,rgba(255,255,255,0.8)  0%,rgba(255,255,255,0.7)  30%,rgba(255,255,255,0.5)  60%,rgba(255,255,255,0)  100%);
+}
+.google-visualization-table-tr-head {
+  background-color: #e4e9f4;
+  font-weight: bold;
+  text-align: center;
+}
+.google-visualization-table-sorthdr {
+  cursor: pointer;
+}
+.google-visualization-table-sortind {
+  color: #ccc;
+  padding-left: 4px;
+}
+.unsorted .google-visualization-table-sortind {
+  display: none;
+}
+.unsorted .google-visualization-table-sortind:after {
+  content: "\2003";
+}
+.sort-ascending .google-visualization-table-sortind:after {
+  content: "\25b2";
+}
+.sort-descending .google-visualization-table-sortind:after {
+  content: "\25bc";
+}
+.google-visualization-table-th {
+  cursor: pointer;
+  white-space: nowrap;
+}
+.google-visualization-table-td {
+  overflow: hidden;
+}
+.google-visualization-table-th, .google-visualization-table-td {
+  padding: 2px .35em;
+  background-color: inherit;
+  background-clip: padding-box;
+}
+.google-visualization-table-table td {
+  border: solid #eee;
+  border-width: 0 1px 1px 0;
+  padding: 2px .35em;
+}
+.google-visualization-table-table th {
+  border: solid #eee;
+  border-width: 0 1px 1px 0;
+  padding: 2px .35em;
+  position: relative;
+  z-index: 10;
+}
+.google-visualization-table-table td.frozen-column {
+  position: relative;
+  z-index: 5;
+}
+.google-visualization-table-table thead th.frozen-column {
+  z-index: 15;
+}
+.google-visualization-table-table .last-frozen-column {
+  border-right: 2px ridge #eee;
+}
+.google-visualization-table-tr-even {
+  background-color: #fff;
+}
+.google-visualization-table-tr-odd {
+  background-color: #fafafa;
+}
+.google-visualization-table-tr-sel {
+  background-color: #d6e9f8;
+}
+.google-visualization-table-tr-over {
+  background-color: #e7e9f9;
+}
+.google-visualization-table-td.google-visualization-table-type-bool {
+  text-align: center;
+  font-family: "Arial Unicode MS" , Arial , Helvetica;
+}
+.google-visualization-table-td.google-visualization-table-type-date {
+  text-align: center;
+}
+.google-visualization-table-td.google-visualization-table-type-number {
+  text-align: right;
+  white-space: nowrap;
+}
+.google-visualization-table-seq {
+  text-align: right;
+  color: #666;
+}
+.google-visualization-table-div-page {
+  display: inline-block;
+  width: 100%;
+  padding: 1px 0 0 1px;
+  border: 0;
+  background-color: #e4e9f4;
+  font-family: Arial , sans-serif;
+}
+.google-visualization-table-div-page [role="button"] {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-family: "Arial Unicode MS" , Arial , Helvetica;
+  font-size: 10px;
+  line-height: 10px;
+}
+.google-visualization-table-div-page [role="button"] .goog-custom-button-inner-box {
+  padding: 1px 1px 2px;
+}
+.google-visualization-table-page-prev:before {
+  content: "\25c4";
+}
+.google-visualization-table-page-next:before {
+  content: "\25ba";
+}
+.google-visualization-table-page-numbers {
+  display: inline-block;
+  zoom: 1;
+  margin: 0;
+  vertical-align: middle;
+}
+.ie8 .google-visualization-table-page-numbers {
+  display: inline;
+}
+.google-visualization-table-page-number {
+  display: inline-block;
+  background-color: #e4e9f4;
+  border: 1px ButtonShadow outset;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: black;
+  font-size: 10px;
+  min-width: 10px;
+  margin: 2px;
+  padding: 0 2px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.google-visualization-table-page-number.current {
+  font-weight: bold;
+  font-size: 11px;
+  background: #fefefe;
+  border-style: inset;
+}
+.google-visualization-table-page-number:hover {
+  background: #fefefe;
+  border-style: inset;
+}
+.google-visualization-table .transparent {
+  background-image: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+.google-visualization-table .transparentIE6 {
+  background: none;
+}
+.google-visualization-table th .transparent, .google-visualization-table td .transparent {
+  color: transparent;
+  opacity: 0;
+}
+.google-visualization-table .google-visualization-hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+.google-visualization-table-loadtest {
+  padding-left: 6px;
+}

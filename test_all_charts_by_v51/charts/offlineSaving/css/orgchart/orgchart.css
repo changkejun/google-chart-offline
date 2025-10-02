@@ -1,0 +1,108 @@
+/* Copyright 2008 Google Inc. All Rights Reserved. */
+
+.google-visualization-orgchart-table {
+  border: 0;
+  text-align: center;
+}
+
+.google-visualization-orgchart-table * {
+  margin: 0;
+  padding: 2px;
+}
+
+.google-visualization-orgchart-space-small {
+  width: 4px;
+  height: 1px;
+  border: 0;
+}
+
+.google-visualization-orgchart-space-medium {
+  width: 10px;
+  height: 1px;
+  border: 0;
+}
+
+.google-visualization-orgchart-space-large {
+  width: 16px;
+  height: 1px;
+  border: 0;
+}
+
+.google-visualization-orgchart-noderow-small {
+  height: 12px;
+  border: 0;
+}
+
+.google-visualization-orgchart-noderow-medium {
+  height: 30px;
+  border: 0;
+}
+
+.google-visualization-orgchart-noderow-large {
+  height: 46px;
+  border: 0;
+}
+
+.google-visualization-orgchart-connrow-small {
+  height: 2px;
+  font-size: 1px;
+}
+
+.google-visualization-orgchart-connrow-medium {
+  height: 6px;
+  font-size: 4px;
+}
+
+.google-visualization-orgchart-connrow-large {
+  height: 10px;
+  font-size: 8px;
+}
+
+.google-visualization-orgchart-node {
+  text-align: center;
+  vertical-align: middle;
+  font-family: arial,helvetica;
+  cursor: default;
+  border: 2px solid #b5d9ea;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 3px;
+  background-color: #edf7ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#edf7ff), to(#cde7ee));
+}
+
+.google-visualization-orgchart-nodesel {
+  border: 2px solid #e3ca4b;
+  background-color: #fff7ae;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff7ae), to(#eee79e));
+}
+
+.google-visualization-orgchart-node-small {
+  font-size: 0.6em;
+}
+
+.google-visualization-orgchart-node-medium {
+  font-size: 0.8em;
+}
+
+.google-visualization-orgchart-node-large {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.google-visualization-orgchart-linenode {
+  border: 0;
+}
+
+.google-visualization-orgchart-lineleft {
+  border-left: 1px solid #3388dd;
+}
+
+.google-visualization-orgchart-lineright {
+  border-right: 1px solid #3388dd;
+}
+
+.google-visualization-orgchart-linebottom {
+  border-bottom: 1px solid #3388dd;
+}
